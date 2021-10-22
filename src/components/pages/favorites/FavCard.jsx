@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import Button from "@material-ui/core/Button";
 import { UserContext } from "../../lib/context/useContext";
-import "./Favorites.css";
+import "./favorites.css";
 
 const useStyles = makeStyles({
 	root: {
