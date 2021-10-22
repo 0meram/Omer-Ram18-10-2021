@@ -1,0 +1,28 @@
+.parallax {
+	background-image: url("../../lib/images/bg.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallaxp {
+	background-image: url("../../lib/images/suny.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.search-con {
+	align-items: center;
+	display: flex;
+}
+
+.title {
+	text-shadow: 2px 2px #505050;
+	color: white;
+	font-size: 60px;
+	margin-bottom: 30px;
+}
