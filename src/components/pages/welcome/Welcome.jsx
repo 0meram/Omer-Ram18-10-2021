@@ -28,7 +28,7 @@ export default function Welcome() {
 		<Grid container component="main" className={classes.root}>
 			<Grid item xs={true} sm={12} md={12} className={classes.image}>
 				<div className="hero">
-					<h1>Welcome!</h1>
+					<h1>Welcome to Frontitude</h1>
 					<p>Lets find out whats the wether like!</p>
 				</div>
 			</Grid>
