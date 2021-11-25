@@ -39,7 +39,7 @@ export default function CurrentWether(props) {
 
 	return (
 		<Card className={classes.root} key={props.key}>
-			<CardContent className="card">
+			<CardContent className="card" className="form">
 				<h3>{props.city}</h3>
 				<h1>{props.text}</h1>
 				<h1>
@@ -55,12 +55,12 @@ export default function CurrentWether(props) {
 						<FavoriteIcon />
 					</IconButton>
 				</CardActions>
-				<div style={{ display: "flex" }}>
+				<div style={{ display: "flex" }} className="form">
 					{days.map((day) => {
 						return <h2 style={{ margin: 30 }}>{day}</h2>;
 					})}
 				</div>
-				<div style={{ display: "flex" }}>
+				<div style={{ display: "flex" }} className="form">
 					{props.days.map((day) => {
 						return <Day day={day} />;
 					})}

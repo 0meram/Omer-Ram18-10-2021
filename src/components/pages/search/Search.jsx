@@ -50,7 +50,7 @@ export default function Search() {
 	const [days, setDays] = useState([]);
 
 	const getForcast = (id) => {
-		const base = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/`;
+		const base = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/`;
 		const query = `${id}?apikey=UIR2sXAbp5TQZRAuMOwP2o89JPkd9aHr`;
 		axios.get(base + query).then((response) => {
 			setDays(response.data.DailyForecasts);
@@ -58,7 +58,7 @@ export default function Search() {
 	};
 
 	const getCurrentWether = (id) => {
-		const base = `https://dataservice.accuweather.com/currentconditions/v1/`;
+		const base = `http://dataservice.accuweather.com/currentconditions/v1/`;
 		const query = `${id}?apikey=UIR2sXAbp5TQZRAuMOwP2o89JPkd9aHr`;
 		axios.get(base + query).then((response) => {
 			setText(response.data[0].WeatherText);
@@ -69,7 +69,7 @@ export default function Search() {
 	};
 
 	const getCity = () => {
-		const base = `https://dataservice.accuweather.com/locations/v1/cities/search`;
+		const base = `http://dataservice.accuweather.com/locations/v1/cities/search`;
 		const query = `?apikey=UIR2sXAbp5TQZRAuMOwP2o89JPkd9aHr&q=${city}`;
 		setLoading(true);
 		axios.get(base + query).then((response) => {
@@ -103,7 +103,7 @@ export default function Search() {
 				<Grid item xs={true} sm={12} md={12} className="parallax">
 					<form style={{ marginTop: 100 }}>
 						<div className="title">Current Weather and forecast</div>
-						<div className={classes.paper}>
+						<div className={classes.paper} className="form">
 							<FormControl className={classes.formControl}>
 								<TextField
 									variant="outlined"
